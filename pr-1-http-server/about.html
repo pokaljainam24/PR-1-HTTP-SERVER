@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #bb86fc;
+            --card-bg-color: #1e1e1e;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        div {
+            display: flex;
+            gap: 20px;
+        }
+
+        div a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+        #menus {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: var(--card-bg-color);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .card p {
+            margin: 0.5rem 0 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="menus">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <h1>About Us</h1>
+        <p>Learn more about our mission and team.</p>
+    </header>
+
+    <div class="cards-container">
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>To create innovative solutions that empower individuals and businesses worldwide.</p>
+        </div>
+
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>To be the most trusted and impactful technology provider in the world.</p>
+        </div>
+
+        <div class="card">
+            <h2>Meet the Team</h2>
+            <p>Our team is composed of talented professionals dedicated to driving success and innovation.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Company. Built with ❤️ using Node.js.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>

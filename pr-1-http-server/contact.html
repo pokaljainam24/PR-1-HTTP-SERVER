@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #bb86fc;
+            --input-bg-color: #1e1e1e;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+            --button-hover-bg: #3700b3;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        div {
+            display: flex;
+            gap: 20px;
+        }
+
+        div a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+        #menus {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .contact-container {
+            background-color: var(--input-bg-color);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+        }
+
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: var(--input-bg-color);
+            color: var(--text-color);
+            font-size: 1rem;
+            box-shadow: 0 2px 4px var(--shadow-color);
+        }
+
+        .contact-container input:focus,
+        .contact-container textarea:focus {
+            outline: none;
+            box-shadow: 0 0 8px var(--accent-color);
+        }
+
+        .contact-container button {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-container button:hover {
+            background-color: var(--button-hover-bg);
+        }
+
+        img{
+            margin-left: 50px;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="menus">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out to us with your questions or feedback!</p>
+    </header>
+ 
+    <div class="contact-container">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <img width="400px" src="./img/contact-register-feedback-support-help-concept_53876-124243.jpg" alt="img">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Company. Built with ❤️ using Node.js.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>

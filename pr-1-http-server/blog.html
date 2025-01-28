@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --accent-color: #bb86fc;
+            --card-bg-color: #1e1e1e;
+            --shadow-color: rgba(0, 0, 0, 0.5);
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        div {
+            display: flex;
+            gap: 20px;
+        }
+
+        div a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        a:hover {
+            color: greenyellow;
+        }
+
+        #menus {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .blog-container {
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .post {
+            background-color: var(--card-bg-color);
+            padding: 1.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .post h2 {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin: 0;
+        }
+
+        .post p {
+            margin: 0.5rem 0 0;
+            line-height: 1.5;
+        }
+
+        .post a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .post a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <div id="menus">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </div>
+        </div>
+        <h1>Our Blog</h1>
+        <p>Insights, stories, and updates from our team.</p>
+    </header>
+
+    <div class="blog-container">
+        <div class="post">
+            <h2>How Technology is Shaping the Future</h2>
+            <p>Discover the latest trends in technology and how they're impacting our lives. <a href="#">Read
+                    more...</a></p>
+        </div>
+
+        <div class="post">
+            <h2>10 Tips for Better Productivity</h2>
+            <p>Learn how to maximize your productivity with these simple tips. <a href="#">Read more...</a></p>
+        </div>
+
+        <div class="post">
+            <h2>Behind the Scenes: Our Development Process</h2>
+            <p>Take a closer look at how we build and innovate at our company. <a href="#">Read more...</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Company. Built with ❤️ using Node.js.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+
+</html>
